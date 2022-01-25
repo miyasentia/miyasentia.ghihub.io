@@ -5,28 +5,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap CSS Offline-->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
-    <title>Belajar bootstrap</title>
+    <!-- Bootstrap CSS Online -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Belajar Bootstrap</title>
+    
   </head>
   <body>
-    
-    <!--AWAL : Navigasi Bar -->
+
+    <!-- AWAL : Navigasi Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="https://miyasentia.github.io">Miya Toko Online</a>
+      <a class="navbar-brand" href="https://Miyasentiawatfa-inverse.github.io">MiyaStore</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <!-- Home -->
+          <!-- Beranda -->
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
           </li>
-          <!-- Dropdown -->
+          <!-- Blog -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-              <!-- Blog -->
+              Blog
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#">Bootstrap Layout</a>
@@ -40,19 +45,85 @@
           </li>
           <!-- Kontak -->
           <li class="nav-item">
-            <a class="nav-link" href="kotakwa.html">Kontak</a>
+            <a class="nav-link" href="kontakwa.html">Kontak</a>
           </li>
-          
         </ul>
       </div>
     </nav>
     <!-- AKHIR : Navigasi Bar -->
 
-   
-    
-    <!--bootstarp js offline-->
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery.slim.min.js"></script>
+    <!-- AWAL : Jumbotron -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Slide-1.jpg" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Slide-2.jpg" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide-3.jpg" class="d-block w-100" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide-4.jpg" class="d-block w-100" alt="Slide 4">
+        </div>
+      </div>
+     <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+    <!-- AKHIR : Jumbotron -->
+
+
+    <!-- AWAL : Produk Terbaru -->
+    <div class="container" id="produkTerbaru">
+      <h1 class="display-1">Produk Terbaru</h1>
+      <br>
+      <!--Baris pertama-->
+      <div class="row">
+          <!--produk satu-->
+        <div class="card" style="width: 18rem;">
+          <img src="img/produk1.jpg" class="card-img-top" alt="produk1">
+            <div class="card-body">
+            <h5  class="card-title">totarial menghasilkan uang
+              <p class="card-text">menghasilkan uang dengan mudah dan cepat</p>
+              <a href="#" class="btn btn-primary">beli sekarang</a>
+            </div>
+          </div>
+        <!--produk dua-->
+          <div class="card" style="width: 18rem;">
+            <img src="img/produk2.png" class="card-img-top" alt="produk2">
+            <div class="card-body">
+            <h5  class="card-title">totarial menghasilkan uang
+              <p class="card-text">menghasilkan uang dengan mudah dan cepat</p>
+              <a href="#" class="btn btn-primary">beli sekarang</a>
+            </div>
+          </div>
+        <!--produk Tiga-->
+        <div class="card" style="width: 18rem;">
+          <img src="img/produk3.jpg" class="card-img-top" alt="produk3">
+          <div class="card-body">
+          <h5  class="card-title">totarial menghasilkan uang
+            <p class="card-text">menghasilkan uang dengan mudah dan cepat</p>
+            <a href="#" class="btn btn-primary">beli sekarang</a>
+          </div>
+        </div>
+      </div>
+    <!-- AKHIR : Produk Terbaru -->
+  </div>
+
+    <!-- Bootstrap Js Offline -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="js/jquery.slim.min.js"></script> -->
+
+    <!-- Bootstrap JS Online -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
   </body>
 </html>
